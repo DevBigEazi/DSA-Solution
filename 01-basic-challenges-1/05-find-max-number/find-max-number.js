@@ -1,20 +1,20 @@
-// const findMaxNumber = (numArr) => {
-//     return Math.max(...numArr);
+// const findMaxNumber = function (arr) {
+//     // return Math.max.apply(null, arr)
+//     return Math.max(...arr)
 // }
 
-// console.log(findMaxNumber([2, 3, 5, 23]));
+const findMaxNumber = function (arr) {
+    let maxNumber = [0];
 
-module.exports = findMaxNumber;
-
-function findMaxNumber(numArr) {
-    let maxNum = numArr[0];
-
-    for (let i = 0; i < numArr.length; i++) {
-        // console.log(numArr[i]);
-        if (numArr[i] > maxNum) {
-            maxNum = numArr[i]
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > maxNumber) {
+            maxNumber = arr[i];
         }
     }
 
-    return (maxNum);
+    return maxNumber;
 }
+
+console.log(findMaxNumber([4, 2, 5]));
+
+module.exports = findMaxNumber;
