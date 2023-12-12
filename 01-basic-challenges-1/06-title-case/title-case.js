@@ -1,16 +1,11 @@
 const titleCase = (str) => {
-    const splString = str.split(' ');
-
-    for (let i = 0; i < splString.length; i++) {
-        splString[i] = splString[i][0].toUpperCase() + splString[i].slice(1).toLowerCase();
+    const words = str.toLowerCase().split(' ');
+    for (let i = 0; i < words.length; i++) {
+        words[i] = `${words[i][0].toUpperCase()}${words[i].slice(1).toLowerCase()}`
+        // console.log(words[i]);
     }
 
-    return splString.join(' ');
+    return words.join(' ');
 }
-
-// function titleCase(str) {
-//     return str.replace(/\b\w/g, (match) => match.toUpperCase());
-// }
-
+// console.log(titleCase("hello world!"));
 module.exports = titleCase;
-
