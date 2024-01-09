@@ -1,19 +1,15 @@
-// const reverseString = (str) => {
-//     return console.log(str.split('').reverse().join(' '));
-// }
-
-// reverseString("Hello");
-
-const reverseString = function (str) {
-
-    let reversed = '';
+const reverseString = (str) => {
+    let rvstr = '';
 
     for (let i = str.length - 1; i >= 0; i--) {
-        reversed += str[i];
+        rvstr += str[i]
     }
 
-    return reversed;
+    return rvstr
 }
 
-// console.log(reverseString('Hello'));
+// const reverseString = (str) => {
+//     const reverse = str.split('').reverse().join('');
+//     return reverse;
+// }
 module.exports = reverseString;
