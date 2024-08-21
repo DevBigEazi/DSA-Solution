@@ -1,4 +1,4 @@
-const getSum = function (a, b) {
+const getSum = (a, b) => {
     return a + b;
 }
 

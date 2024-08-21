@@ -1,24 +1,14 @@
-// function countOccurrences(str, char) {
-//     let count = 0;
-//     let caseInsensitive = str.toLowerCase();
-
-//     for (const string of caseInsensitive) {
-//         console.log(string);
-//         if (string === char) {
-//             count++;
-//         }
-//     }
-
-//     return count;
-// }
-
 function countOccurrences(str, char) {
+    // let count = 0;
+    // for (let i = 0; i < str.length; i++) {
+    //     console.log(str[i])
+    //     if (str[i] === char) {
+    //         count++
+    //     }
+    // }
+    // return count;
 
-    const count = str.toLowerCase().split(char);
-    console.log(count);
-    return count.length - 1;
+    return str.split(char).length - 1;
 }
-
-// console.log(countOccurrences('Hello', "h"));
 
 module.exports = countOccurrences;

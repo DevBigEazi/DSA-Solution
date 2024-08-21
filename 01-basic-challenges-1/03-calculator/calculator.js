@@ -1,39 +1,29 @@
-// const calculator = (a, b, operator) => {
-//     let result = 0;
-
-//     if (operator === "+") {
-//         result = a + b;
-//     } else if (operator === "-") {
-//         result = a - b;
-//     } else if (operator === "*") {
-//         result = a * b;
-//     } else if (operator === "/") {
-//         result = a / b;
-//     } else {
-//         throw new Error("Invalid operator");
-//     }
-
-//     return result;
-// }
-
 const calculator = (a, b, operator) => {
-    let result = 0;
+    let result;
+    // if (operator === "+") return a + b
+    // if (operator === "-") return a - b
+    // if (operator === "/") return a / b
+    // if (operator === "*") return a * b
+    // else {
+    //     console.log("Error")
+    //     throw Error("Invalid operator");
+    // }
 
     switch (operator) {
-        case "+":
+        case '+':
             result = a + b;
             break;
-        case "-":
+        case '-':
             result = a - b;
             break;
-        case "*":
-            result = a * b;
-            break;
-        case "/":
+        case '/':
             result = a / b;
             break;
+        case '*':
+            result = a * b;
+            break;
         default:
-            throw new Error("Invalid operator");
+            throw new Error("Invalid operator")
     }
 
     return result;
